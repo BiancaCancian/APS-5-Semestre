@@ -6,7 +6,6 @@
 
 ```
 $ git clone 
-$ cd chatbot-deployment
 ```
 
 - Instale as Dependencias
