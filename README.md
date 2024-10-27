@@ -5,7 +5,7 @@
 - Clonar repositório 
 
 ```
-$ git clone https://github.com/python-engineer/chatbot-deployment.git
+$ git clone 
 $ cd chatbot-deployment
 ```
 
