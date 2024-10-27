@@ -12,7 +12,7 @@ $ cd chatbot-deployment
 >>> nltk.download('punkt')
 ```
 
-Rode
+- Treinar
 ```
 $ (venv) python train.py
 ```
