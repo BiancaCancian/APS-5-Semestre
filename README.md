@@ -1,5 +1,5 @@
 ## Projeto em desenvolvimento
-![image](https://github.com/user-attachments/assets/0554666f-832b-4db1-a21f-46df6f8c834c)
+![apsindex](https://github.com/user-attachments/assets/ea11b79e-cdad-4768-befb-1d1c9de802eb)
 
 ## Configuração inicial:
 - Clonar repositório 
@@ -18,4 +18,9 @@ $ cd chatbot-deployment
 - Treinar
 ```
 $ (venv) python train.py
+```
+
+- Rodar 
+```
+>>> python app.py
 ```
