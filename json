@@ -1,0 +1,16 @@
+# Aceitar caracteres especiais
+
+import json
+
+input_file = 'intents.json'
+output_file = 'intents_utf8.json'
+
+# Ler o arquivo JSON
+with open(input_file, 'r', encoding='utf-8') as f:
+    data = json.load(f)
+
+# Reescrever o arquivo JSON em UTF-8
+with open(output_file, 'w', encoding='utf-8') as f:
+    json.dump(data, f, ensure_ascii=False, indent=4)
+
+print(f'Arquivo salvo como {output_file} em UTF-8.')

@@ -1,0 +1,109 @@
+{
+    "intents": [
+      {
+        "tag": "air_quality",
+        "patterns": [
+          "O que e qualidade do ar?",
+          "Como a qualidade do ar e medida?",
+          "O que significa um indice de qualidade do ar alto?",
+          "Como e calculada a qualidade do ar?",
+          "Quais sao os principais poluentes que afetam a qualidade do ar?",
+          "Como posso verificar a qualidade do ar na minha cidade?",
+          "Quais sao os efeitos da poluicao do ar na saude humana?",
+          "O que devo fazer se a qualidade do ar estiver ruim?",
+          "Qual a importancia de monitorar a qualidade do ar?"
+        ],
+        "responses": [
+          "A qualidade do ar refere-se ao estado da atmosfera em relacao a poluicao e a presenca de poluentes.",
+          "A qualidade do ar e medida usando o indice de qualidade do ar (IQA), que considera varios poluentes.",
+          "Um indice alto indica que a qualidade do ar e ruim e pode ter impactos negativos na saude.",
+          "A qualidade do ar e calculada com base em concentracoes de poluentes como PM2.5, ozono e dioxido de nitrogenio.",
+          "Os principais poluentes incluem particulas finas (PM2.5), ozono, dioxido de nitrogenio e monoxido de carbono.",
+          "Voce pode verificar a qualidade do ar em nosso sistema em tempo real, aplicativos de monitoramento ou sites especializados.",
+          "Se a qualidade do ar estiver ruim, e aconselhavel evitar atividades ao ar livre e usar mascara."
+        ]
+      },
+      {
+        "tag": "air_quality_colors",
+        "patterns": [
+          "O que significa a cor verde no indice de qualidade do ar?",
+          "O que a cor amarela representa na qualidade do ar?",
+          "E a cor laranja? O que ela indica?",
+          "Qual e o significado da cor vermelha no IQA?",
+          "Quando a qualidade do ar e considerada perigosa?",
+          "O que significa uma cor roxa no indice de qualidade do ar?",
+          "Como as cores ajudam a entender a qualidade do ar?",
+          "Qual e a cor que representa a melhor qualidade do ar?"
+        ],
+        "responses": [
+          "A cor verde indica que a qualidade do ar e boa, com niveis de poluicao baixos.",
+          "A cor amarela representa uma qualidade do ar moderada, onde a poluicao pode ser um problema para algumas pessoas.",
+          "A cor laranja indica que a qualidade do ar e insalubre para grupos sensiveis, como criancas e idosos.",
+          "A cor vermelha significa que a qualidade do ar e insalubre para todos, e e recomendavel evitar atividades ao ar livre.",
+          "A cor roxa indica niveis de poluicao muito altos, considerados perigosos para a saude.",
+          "As cores ajudam a visualizar rapidamente a qualidade do ar, facilitando a compreensao das informacoes.",
+          "A cor verde representa a melhor qualidade do ar, indicando condicoes saudaveis para todos."
+        ]
+      },
+      {
+        "tag": "sustainability_tips",
+        "patterns": [
+          "Quais sao algumas dicas de sustentabilidade?",
+          "Como posso reduzir minha pegada de carbono?",
+          "O que posso fazer para ajudar o meio ambiente?",
+          "Como economizar energia em casa?",
+          "Quais sao as melhores praticas de reciclagem?",
+          "Como posso usar menos plastico?",
+          "Quais produtos sustentaveis devo usar?",
+          "Como posso participar de projetos ambientais?"
+        ],
+        "responses": [
+          "Algumas dicas incluem reduzir o uso de plastico, reciclar corretamente e economizar agua.",
+          "Voce pode reduzir sua pegada de carbono usando transporte publico, caminhando ou usando bicicletas.",
+          "Plante arvores, conserve agua e escolha produtos ecologicos sempre que possivel.",
+          "Desligue os aparelhos quando nao estiverem em uso e use lampadas LED para economizar energia.",
+          "Certifique-se de que os materiais reciclaveis estejam limpos e secos antes de descartá-los."
+        ]
+      },
+      {
+        "tag": "impact_of_pollution",
+        "patterns": [
+          "Como a poluicao afeta a saude humana?",
+          "Quais sao os efeitos da poluicao do ar na natureza?",
+          "O que acontece quando a qualidade do ar e ruim?",
+          "Quais doencas estao associadas a poluicao do ar?",
+          "Como a poluicao influencia o clima?",
+          "Quais sao os efeitos a longo prazo da exposicao a poluicao?",
+          "A poluicao do ar pode afetar as plantas?",
+          "Como a poluicao afeta a fauna?"
+        ],
+        "responses": [
+          "A poluicao pode causar problemas respiratorios, doencas cardiovasculares e outros problemas de saude.",
+          "A poluicao do ar pode levar a morte de plantas, acidificacao do solo e alteracoes nos ecossistemas.",
+          "Quando a qualidade do ar e ruim, pode haver aumento de hospitalizacoes e morte precoce.",
+          "Doencas respiratorias, cancer e doencas cardiacas estao associadas a poluicao do ar.",
+          "A poluicao do ar contribui para mudancas climaticas, como o aquecimento global."
+        ]
+      },
+      {
+        "tag": "community_involvement",
+        "patterns": [
+          "Como posso me envolver na protecao do meio ambiente?",
+          "Quais sao os grupos de apoio ambiental que posso encontrar?",
+          "Existem eventos locais para ajudar a limpar a natureza?",
+          "Como posso participar de campanhas de conscientizacao ambiental?",
+          "Quais organizacoes trabalham com qualidade do ar?",
+          "Posso voluntariar em projetos ambientais?",
+          "Onde posso encontrar informacoes sobre projetos sustentaveis na minha area?",
+          "Como posso educar minha comunidade sobre qualidade do ar?"
+        ],
+        "responses": [
+          "Voce pode participar de limpezas comunitarias e eventos de plantio de arvores.",
+          "Procure grupos locais nas redes sociais ou em sites de voluntariado.",
+          "Sim, muitas organizacoes promovem eventos de limpeza e voce pode se inscrever para ajudar.",
+          "Participe de workshops e palestras sobre meio ambiente em sua comunidade.",
+          "Organizacoes como Greenpeace e World Wildlife Fund estao sempre a procura de voluntarios."
+        ]
+      }
+    ]
+  }

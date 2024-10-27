@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Qualidade do Ar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+</head>
+<body>
+    <header>
+        <i class="fa-solid fa-cloud"></i>
+    </header>
+
+    <h1>Poluição do ar: Índice de qualidade do ar em tempo real (AQI)</h1>
+
+    <form method="POST" action="" class="bianca">
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input class="kim" type="text" id="station" name="station" placeholder="Escreva sua localização atual" required>
+        </div>
+    </form>
+
+    <div class="table-container">
+        <h2>Air Quality Index</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Categoria</th>
+                    <th>Cor</th>
+                    <th>Intervalo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Boa</td>
+                    <td style="background-color: #00e400; color: white;"></td>
+                    <td>0 - 50</td>
+                </tr>
+                <tr>
+                    <td>Moderada</td>
+                    <td style="background-color: #ffff00; color: black;"></td>
+                    <td>51 - 100</td>
+                </tr>
+                <tr>
+                    <td>Ruim</td>
+                    <td style="background-color: #ff7e00; color: white;"></td>
+                    <td>101 - 150</td>
+                </tr>
+                <tr>
+                    <td>Insalubre</td>
+                    <td style="background-color: #ff0000; color: white;"></td>
+                    <td>151 - 200</td>
+                </tr>
+                <tr>
+                    <td>Muito Insalubre</td>
+                    <td style="background-color: #8f3f97; color: white;"></td>
+                    <td>201 - 300</td>
+                </tr>
+                <tr>
+                    <td>Perigosa</td>
+                    <td style="background-color: #7e0023; color: white;"></td>
+                    <td>301 - 500</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="wrapper">
+        {% if error_message %}
+            <p>{{ error_message }}</p>
+        {% else %}
+            {% if air_quality_data %}
+                {% for item in air_quality_data %}
+                    <div class="single {{ item.color_class }}">
+                        <p class="aqi-value">{{ item.air_quality }}</p>
+                        <p>{{ item.station_name }}</p>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p></p>
+            {% endif %}
+        {% endif %}
+    </div>
+
+    <div class="container" style="margin-top: 50px;">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" alt="Chat Icon">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">EcoBot</h4>
+                        <p class="chatbox__description--header">Sustentabilidade ao seu alcance.</p>
+                    </div>
+                </div>
+                <div class="suggestions">
+                    <button onclick="sendSuggestion('O que e qualidade do ar?')">O que é qualidade do ar?</button>
+                    <button onclick="sendSuggestion('Quais sao algumas dicas de sustentabilidade?')">Quais sao algumas dicas de sustentabilidade?</button>
+                    <button onclick="sendSuggestion('Quais sao os principais poluentes que afetam a qualidade do ar?')">Quais sao os principais poluentes que afetam a qualidade do ar?</button>
+                    <button onclick="sendSuggestion('Como posso me envolver na protecao do meio ambiente?')">Como posso me envolver na protecao do meio ambiente?</button>
+                    <button onclick="sendSuggestion('O que devo fazer se a qualidade do ar estiver ruim?')">O que devo fazer se a qualidade do ar estiver ruim?</button>
+                </div>
+                <div class="chatbox__messages">
+                    
+                </div>
+                <div class="chatbox__footer">
+                    <input type="text" id="chat-input" placeholder="O que é qualidade do ar?">
+                    <button class="chatbox__send--footer send__button">Enviar</button>
+                </div>
+             
+            </div>
+            <div class="chatbox__button">
+                <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function sendSuggestion(question) {
+            const chatInput = document.getElementById('chat-input'); 
+            chatInput.value = question; 
+            
+        }
+    </script>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+    
+</body>
+</html>
