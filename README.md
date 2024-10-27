@@ -1,3 +1,6 @@
+## Projeto em desenvolvimento
+![image](https://github.com/user-attachments/assets/0554666f-832b-4db1-a21f-46df6f8c834c)
+
 ## Configuração inicial:
 - Clonar repositório 
 
