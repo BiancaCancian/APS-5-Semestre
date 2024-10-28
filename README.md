@@ -1,5 +1,5 @@
 ## Projeto em desenvolvimento
-![apsindex](https://github.com/user-attachments/assets/ea11b79e-cdad-4768-befb-1d1c9de802eb)
+![apsindex](https://github.com/user-attachments/assets/ef53a5d3-5d48-4468-a1a8-57ab92e0956a)
 
 ## Configuração inicial:
 - Clonar repositório 
