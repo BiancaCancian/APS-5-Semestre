@@ -14,7 +14,6 @@ Este projeto foi criado para integrar um chatbot com funcionalidades de previsã
 A estrutura do projeto está organizada em arquivos e pastas conforme listado abaixo, cada um com uma função específica:
 
 ### Arquivos principais
-- **README.md**: Arquivo de documentação com instruções de configuração e uso.
 - **app.py**: Script principal que executa o aplicativo Flask para interação com o chatbot e a API de qualidade do ar.
 - **chat.py**: Código de suporte ao chatbot para análise de frases de entrada e resposta automatizada.
 - **data.pth**: Arquivo contendo o modelo de dados treinado, necessário para o chatbot.
