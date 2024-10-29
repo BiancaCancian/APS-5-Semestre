@@ -1,7 +1,5 @@
 ![apsindex](https://github.com/user-attachments/assets/ef53a5d3-5d48-4468-a1a8-57ab92e0956a)
 
-Aqui está uma documentação completa para o seu projeto, abrangendo a estrutura do projeto, instruções de configuração, uso e objetivos do código.
-
 ---
 
 # Documentação do Projeto de Reconhecimento Facial e Chatbot de Qualidade do Ar
