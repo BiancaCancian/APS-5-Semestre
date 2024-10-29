@@ -2,7 +2,7 @@
 
 ---
 
-# Documentação do Projeto de Reconhecimento Facial e Chatbot de Qualidade do Ar
+# Documentação do Projeto Chatbot de Qualidade do Ar
 
 ## Objetivo do Projeto
 Este projeto foi criado para integrar um chatbot com funcionalidades de previsão e um sistema de reconhecimento de qualidade do ar para diferentes localidades. Ele utiliza um modelo de processamento de linguagem natural (PLN) para entender e responder às perguntas dos usuários e coleta dados de qualidade do ar por meio de uma API externa, retornando informações específicas sobre os níveis de poluição e sua classificação em cores.
